@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://truthordare.clickabletools.com/sitemap.xml

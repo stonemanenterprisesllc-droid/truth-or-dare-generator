@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Truth or Dare Generator — Clean, Fun Questions & Dares for Any Group</title>
+<meta name="description" content="Generate random Truth or Dare prompts instantly: clean, fun truths and dares for parties, kids, teens, and couples. Free, unlimited, family-friendly.">
+<link rel="canonical" href="https://truthordare.clickabletools.com/">
+<style>
+:root{--accent:#db2777;--accent-dark:#be185d}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.6;color:#1f2937;background:#f8fafc}
+header{background:var(--accent);color:#fff;padding:1rem}
+header .wrap{max-width:760px;margin:0 auto}
+header a{color:#fff;text-decoration:none;font-weight:700;font-size:1.2rem}
+main{max-width:760px;margin:0 auto;padding:1rem}
+h1{font-size:1.5rem;margin:.75rem 0 .25rem}
+.tagline{color:#6b7280;margin-bottom:1rem}
+.tool{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:1.25rem;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.row{display:flex;gap:.75rem;flex-wrap:wrap;align-items:flex-end;margin-bottom:.75rem}
+.row>div{display:flex;flex-direction:column}
+label{font-weight:600;margin-bottom:.25rem}
+select{padding:.55rem;border:2px solid #d1d5db;border-radius:8px;font-size:1rem;font-family:inherit}
+.btn{background:var(--accent);color:#fff;border:none;border-radius:8px;padding:.7rem 1.5rem;font-size:1.05rem;font-weight:700;cursor:pointer}
+.btn:hover{background:var(--accent-dark)}
+#out{display:none;margin-top:1rem}
+.name-card{border:1px solid #e5e7eb;border-left:4px solid var(--accent);border-radius:8px;padding:.6rem .9rem;margin:.4rem 0;display:flex;justify-content:space-between;align-items:center;gap:.5rem;flex-wrap:wrap}
+.name-card .n{font-size:1.1rem;font-weight:600}
+.name-card .tag{font-size:.72rem;font-weight:700;letter-spacing:.05em;color:#fff;background:var(--accent);border-radius:4px;padding:.1rem .4rem;display:inline-block;margin-bottom:.2rem}
+.name-card .tag.dare{background:#7c3aed}
+.copybtn{background:#fff;border:1px solid #d1d5db;border-radius:6px;padding:.25rem .6rem;cursor:pointer;font-size:.85rem}
+.copybtn:hover{border-color:var(--accent);color:var(--accent)}
+.ad-slot{margin:1rem 0}
+article h2{margin:1.5rem 0 .5rem;font-size:1.2rem}
+article p,article li{margin:.5rem 0}
+article ul{padding-left:1.4rem}
+footer{max-width:760px;margin:2rem auto;padding:1rem;font-size:.85rem;color:#6b7280;border-top:1px solid #e5e7eb}
+footer a{color:#6b7280;margin-right:1rem}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a href="./">Truth or Dare Generator</a></div></header>
+<main>
+<h1>Truth or Dare Generator</h1>
+<p class="tagline">Clean, fun truths and dares for parties, kids, and couples — one tap.</p>
+
+<div class="tool">
+<div class="row">
+<div><label for="mode">Group</label>
+<select id="mode"><option value="party" selected>Party</option><option value="kids">Kids</option><option value="couples">Couples</option></select></div>
+<div><label for="type">Type</label>
+<select id="type"><option value="both" selected>Both</option><option value="truth">Truth only</option><option value="dare">Dare only</option></select></div>
+<div><label for="qty">How many</label>
+<select id="qty"><option selected>1</option><option>3</option><option>5</option><option>10</option></select></div>
+</div>
+<button class="btn" id="gen">🎯 Give Me One</button>
+<div id="out" aria-live="polite"></div>
+</div>
+
+<div class="ad-slot" data-ad="top"></div>
+
+<article>
+<h2>How to play Truth or Dare</h2>
+<p>Players take turns choosing <strong>"truth"</strong> — and honestly answering a question — or
+<strong>"dare"</strong> — and completing a small challenge. Go around a circle, spin a bottle to pick
+who's next, or just call on someone. The only real rule is that everyone plays fair: answer truthfully
+if you pick truth, and actually do the dare if you pick dare. Every prompt in this generator is kept
+<strong>clean and good-natured</strong>, so it works for classrooms, sleepovers, family game night,
+and party warm-ups.</p>
+<h2>Pick the right group</h2>
+<ul>
+<li><strong>Party</strong> — lighthearted truths and silly dares for friends and mixed groups.</li>
+<li><strong>Kids</strong> — wholesome, giggly prompts safe for younger players.</li>
+<li><strong>Couples</strong> — sweet, romantic questions and cute dares for date night.</li>
+</ul>
+<h2>Ways to keep it fun</h2>
+<ul>
+<li>Set a "chicken" rule: skip a prompt once per game, but you owe the group an extra dare later.</li>
+<li>Use the <em>Truth only</em> or <em>Dare only</em> setting when the group is in the mood for one or the other.</li>
+<li>Generate a batch of ten before you start so there's no waiting between turns.</li>
+</ul>
+<h2>About these prompts</h2>
+<p>All prompts are written to be family-friendly and are generated in your browser — nothing is stored
+and nothing is inappropriate. If a dare ever doesn't fit your space, just tap again for a new one.</p>
+</article>
+
+<div class="ad-slot" data-ad="bottom"></div>
+</main>
+
+<footer>
+<p><a href="./">Home</a> <a href="about.html">About</a> <a href="privacy.html">Privacy Policy</a> <a href="terms.html">Terms of Use</a></p>
+<p>&copy; 2026 Truth or Dare Generator. All rights reserved.</p>
+<p>More free tools:
+<a href="https://wouldyourather.clickabletools.com/">Would You Rather</a>
+<a href="https://pictionary.clickabletools.com/">Pictionary Word Generator</a>
+<a href="https://fillintheblank.clickabletools.com/">Fill-in-the-Blank Stories</a>
+<a href="https://wordscramble.clickabletools.com/">Word Scramble Maker</a></p>
+</footer>
+
+<script>
+const $=id=>document.getElementById(id);
+const T={
+ party:{truth:["What's the most embarrassing thing that's ever happened to you in public?","What's a small lie you tell all the time?","What's the last thing you searched on your phone?","Who in this room would you want on your team in a zombie apocalypse?","What's your most useless talent?","What's the worst gift you've ever received?","What's a food you pretend to like but secretly hate?","What's the most childish thing you still do?","What's your biggest irrational fear?","If you could swap lives with someone here for a day, who would it be?","What's the weirdest thing in your fridge right now?","What's a habit you have that annoys other people?"],
+  dare:["Do your best impression of someone in the room until they guess who it is.","Talk in an accent until your next turn.","Do 10 jumping jacks right now.","Sing the chorus of the last song you listened to.","Balance a spoon on your nose for 10 seconds.","Do your best runway walk across the room.","Speak only in questions until your next turn.","Do your best robot dance for 15 seconds.","Try to lick your elbow.","Come up with a short rap about the person to your left.","Let the group give you a new nickname for the rest of the game.","Do your best slow-motion action-movie scene."]},
+ kids:{truth:["What's your favorite animal and why?","What's the silliest dream you've ever had?","If you could have any superpower, what would it be?","What's your favorite thing to do on a rainy day?","What's the funniest word you can think of?","If you could eat only one food forever, what would it be?","What's your favorite cartoon character?","What would you name a pet dragon?","What's the best trick you can do?","If you could be any age, what age would you be?"],
+  dare:["Hop on one foot ten times.","Do your best animal impression and make everyone guess it.","Sing 'Happy Birthday' in a silly voice.","Make the funniest face you can for 10 seconds.","Do a silly dance with no music.","Talk like a robot until your next turn.","Pretend to be a monkey for 20 seconds.","Try to say the alphabet backwards.","Walk across the room like a crab.","Give everyone a high five and a compliment."]},
+ couples:{truth:["What was your first impression of me?","What's your favorite memory of us so far?","What's one little thing I do that makes you smile?","Where would you most want to travel together?","What song reminds you of me?","What's something new you'd like us to try together?","What's the most thoughtful thing anyone has done for you?","What's your idea of a perfect lazy Sunday together?","What's a tiny thing you're grateful for today?","What's your favorite photo of us?"],
+  dare:["Give me a genuine compliment.","Do your best impression of me.","Serenade me with any song for 15 seconds.","Recreate the face you made on our first date.","Give me a 20-second shoulder massage.","Take a cute selfie together right now.","Slow dance with me with no music for 30 seconds.","Plan our next date in one sentence.","Say three things you love about me.","Do our 'couple pose' for a photo."]}
+};
+function pick(a){return a[Math.floor(Math.random()*a.length)];}
+$('gen').addEventListener('click',()=>{
+ const m=$('mode').value, ty=$('type').value, n=+$('qty').value, cards=[];
+ for(let i=0;i<n;i++){
+  const kind=ty==='both'?(Math.random()<.5?'truth':'dare'):ty;
+  const prompt=pick(T[m][kind]);
+  const label=kind==='truth'?'TRUTH':'DARE';
+  const cls=kind==='dare'?'tag dare':'tag';
+  cards.push(`<div class="name-card"><span class="n"><span class="${cls}">${label}</span><br>${prompt}</span><button class="copybtn" data-n="${label}: ${prompt.replace(/"/g,'&quot;')}">copy</button></div>`);
+ }
+ $('out').innerHTML=cards.join('');
+ $('out').style.display='block';
+ document.querySelectorAll('.copybtn').forEach(b=>b.addEventListener('click',async()=>{
+  try{await navigator.clipboard.writeText(b.dataset.n);}catch(e){}
+  b.textContent='copied!';setTimeout(()=>b.textContent='copy',1200);
+ }));
+});
+</script>
+</body>
+</html>
